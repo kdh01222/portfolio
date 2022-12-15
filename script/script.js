@@ -161,6 +161,9 @@ window.addEventListener("DOMContentLoaded", function(){
 	init();
 
 	window.addEventListener("resize", function(){
+		if(deviceStatus == "mobile"){
+			return;
+		}
 		clearTimeout(timer);
 
 		timer=setTimeout(function(){
