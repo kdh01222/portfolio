@@ -103,7 +103,7 @@ body.fixed{
 	font-size: 16px;
 	color: #fff;
 	font-weight: 400;
-	font-family: 'Righteous', cursive;
+	/* font-family: 'Righteous', cursive; */
 }
 #main.fixed #header #gnb li a{
 	color: rgb(54, 54, 54);
@@ -1115,7 +1115,8 @@ body.fixed{
 #portfolio .mobile .inner .photo ul li img {
 	max-width: 100%;
 }
-#project2 {
+#project2,
+#project3 {
 	margin-top: 5em;
 }
 #portfolio .inner .project .fixed_area2 {
@@ -1125,6 +1126,15 @@ body.fixed{
 	background-size: cover;
 }
 #portfolio .inner .project.active .fixed_area2 {
+	display: block;
+}
+#portfolio .inner .project .fixed_area3 {
+	display: none;
+	height: 7.5em;
+	background: url(../images/project3_bg.jpg) no-repeat 0 0 fixed;
+	background-size: cover;
+}
+#portfolio .inner .project.active .fixed_area3 {
 	display: block;
 }
 
@@ -1261,11 +1271,13 @@ body.fixed{
 		display: none;
 	}
 	#portfolio .inner .project .fixed_area,
-	#portfolio .inner .project .fixed_area2 {
+	#portfolio .inner .project .fixed_area2,
+	#portfolio .inner .project .fixed_area3 {
 		display: none;
 	}
 	#portfolio .inner .project.active .fixed_area,
-	#portfolio .inner .project.active .fixed_area2 {
+	#portfolio .inner .project.active .fixed_area2,
+	#portfolio .inner .project.active .fixed_area3 {
 		display: none;
 	}
 	#portfolio .inner .project.active .thumbnail {
@@ -1366,13 +1378,13 @@ body.fixed{
 #aboutme .content dd p{
 	display: inline-block;
 	vertical-align: top;
-	font-size: 12px;
+	font-size: 14px;
 }
 #aboutme .content dd p.subtitle{
 	vertical-align: top;
 	width: 70px;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
 }
 #aboutme .content .skills{
 	width: 58%;
@@ -1381,7 +1393,7 @@ body.fixed{
 
 #aboutme .content .skills dd span{
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1403,7 +1415,7 @@ body.fixed{
 		width: 100%;
 	}
 	#aboutme .content dd p{
-		font-size: 13px;
+		font-size: 14px;
 	}
 	#aboutme .content .skills{
 		width: 100%;
@@ -1413,7 +1425,7 @@ body.fixed{
 		margin-top: 15px;
 	}
 	#aboutme .content .skills dd span{
-		font-size: 13px;
+		font-size: 14px;
 	}
 	
 }

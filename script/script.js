@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	let gnbLi=gnb.getElementsByTagName("li");
 	let pdfBtn=document.querySelector(".pdf_down");
 	let tab=document.querySelector(".tab");
+	let logo=this.document.querySelector(".logo");
 	let mobile_menu=document.querySelector(".mobile_menu");
 	let mobileLi=mobile_menu.getElementsByTagName("li");
 	let main=document.getElementById("main");
@@ -161,9 +162,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	init();
 
 	window.addEventListener("resize", function(){
-		if(deviceStatus == "mobile"){
-			return;
-		}
+		if(moving == true) return;
+
 		clearTimeout(timer);
 
 		timer=setTimeout(function(){
@@ -177,7 +177,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			else{
 				deviceStatus="mobile";
 			}
-
 			if(deviceStatus == "pc"){
 				let wheelAreaHeight=winH*68/100;
 				wheelArea.style.height=wheelAreaHeight+"px";
@@ -202,9 +201,6 @@ window.addEventListener("DOMContentLoaded", function(){
 				}
 			}
 			else{
-				if(moving) return;
-				moving=true;
-
 				if(mainN >= 1){
 					if(main.classList.contains("fixed") == false) main.classList.add("fixed");
 				}
@@ -217,7 +213,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 
 			buttonActive();
-		}, 50);
+		}, 10);
 	});
 	wheelArea.addEventListener("mousewheel", function(e){
 		if(deviceStatus == "mobile" || moving == true) return;
@@ -242,6 +238,7 @@ window.addEventListener("DOMContentLoaded", function(){
 					return;
 				}
 			}
+
 			indexWheelMoving();
 		}, 50);
 	});
@@ -290,6 +287,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		mobile_menu.classList.toggle("active");
 		body.classList.toggle("fixed");
 		this.classList.toggle("active");
+		logo.classList.toggle("active");
 	});
 
 	for(let i=0; i<mobileLi.length; i++){
@@ -305,7 +303,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			buttonActive();
 		});
 	}
-
 	document.addEventListener("scroll", function(){
 		if(deviceStatus == "pc" || moving == true) return;
 
@@ -326,7 +323,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			else{
 				mainN=3;
 			}
-
 			if(mobilePageList[mainN].classList.contains("active") == false){
 				mobilePageList[mainN].classList.add("active");
 			}
