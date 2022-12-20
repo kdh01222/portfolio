@@ -321,18 +321,7 @@ body.fixed{
 	background: url(../images/ft_figma.png) no-repeat center center;
 	background-size: cover;
 }
-/* #main .right_menu.mobile li:first-child a{
-	background: url(../images/github.png) no-repeat center center;
-	background-size: cover;
-}
-#main .right_menu.mobile li:nth-child(2) a{
-	background: url(../images/codepen.png) no-repeat center center;
-	background-size: cover;
-}
-#main .right_menu.mobile li:nth-child(3) a{
-	background: url(../images/ft_figma.png) no-repeat center center;
-	background-size: cover;
-} */ */
+
 #main .pdf_down{
 	position: fixed;
 	display: none;
@@ -1322,12 +1311,13 @@ body.fixed{
 	text-shadow:  2px 2px 6px grey;
 	text-align: center;
 }
-/* #main .mobile_keytext p{
-	display: inline-block;
-	margin-top: 80px;
+#main .mobile_keytext p{
+	margin-top: 100px;
+	line-height: 30px;
 	text-shadow: 2px 2px 6px grey;
-	font-size: 14px;
-} */
+	font-size: 18px;
+	text-align: center;
+}
 @media only screen and (max-width: 720px){
 	#main .mobile_keytext{
 		display: block;
