@@ -19,13 +19,22 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	// swiperjs interface
 	var swiper=new Swiper(".mySwiper", {
-			slidesPerView: 1,
-			spaceBetween: 30,
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+			centeredSlides: false,
+			spaceBetween: 20,
 			pagination: {
-			el: ".swiper-pagination",
-			clickable: true
+			el: ".swiper-pagination"
+			},
+			clickable: true,
+			breakpoints: {
+				1000: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+				},
+			},
 		}
-	});
+	);
 
 	// pc interface
 	let deviceStatus;
@@ -355,14 +364,14 @@ window.addEventListener("DOMContentLoaded", function(){
 					project[j].classList.add("active");
 
 					if(deviceStatus == "mobile"){
-						gsap.to(window, {scrollTo: project[j].offsetTop-32, duration: 0.4});
+						gsap.to(window, {scrollTo: project[j].offsetTop-150, duration: 0.4});
 					}
 					else{
 						let portPadding=250;
 						let protHeight=300;
 						let portTargetY=portPadding+protHeight*projectN;
 
-						gsap.to(portfolio, {scrollTo: portTargetY, duration: 0.4});
+						gsap.to(portfolio, {scrollTo: portTargetY-100, duration: 0.4});
 					}
 				}
 				else{
@@ -371,4 +380,14 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		});
 	}
+
+	let my_photo=document.querySelector(".my_photo");
+	console.log(my_photo);
+
+	my_photo.addEventListener("mouseover", function(){
+		my_photo.classList.add("active");
+	});
+	my_photo.addEventListener("mouseleave", function(){
+		my_photo.classList.remove("active");
+	});
 });
