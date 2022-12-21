@@ -208,6 +208,10 @@ window.addEventListener("DOMContentLoaded", function(){
 
 					pageScrollMoving(winH);
 				}
+				mobile_menu.classList.remove("active");
+				body.classList.remove("fixed");
+				tab.classList.remove("active");
+				logo.classList.remove("active");
 			}
 			else{
 				if(mainN >= 1){

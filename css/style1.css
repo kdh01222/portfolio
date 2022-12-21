@@ -488,6 +488,7 @@ body.fixed{
 	color: rgb(54, 54, 54);
 	font-size: 35px;
 	line-height: 60px;
+	font-family: 'Righteous', cursive;
 }
 .mobile_menu li.active a{
 	color:#f00;
