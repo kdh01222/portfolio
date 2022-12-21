@@ -920,6 +920,9 @@ body.fixed{
 #portfolio .inner .project .title_area .title a .txt h3 {
 	font-size: 2em;
 }
+#portfolio .inner .project.active .title_area .title a .txt h3 {
+	color: rgb(209, 0, 0);
+}
 #portfolio .inner .project .title_area .title a .txt span {
 	font-size: 0.875em;
 	font-weight: 300;
@@ -1025,7 +1028,7 @@ body.fixed{
 	transition: background-color 0.3s;
 }
 #portfolio .inner .project .overview_area .link a:hover {
-	background-color: rgb(54, 54, 54);
+	background-color: rgb(209, 0, 0);
 }
 #portfolio .inner .project .overview_area .link a::after {
 	content: "";
