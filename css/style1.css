@@ -1039,6 +1039,11 @@ body.fixed{
 	height: 10px;
 	background: url(../images/icon_next.png) no-repeat;
 }
+#portfolio .inner .project .overview_area .link a.design{
+	margin-left: 15px;
+	text-indent: 16px;
+}
+
 #portfolio .inner .project .sub {
 	display: none;
 }
