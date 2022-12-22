@@ -291,7 +291,7 @@ body.fixed{
 	display: block;
 	width: 30px;
 	height: 30px;
-
+	transition: all 0.3s;
 }
 #main .right_menu li:nth-child(2){
 	margin-top: 10px;
@@ -321,7 +321,9 @@ body.fixed{
 	background: url(../images/ft_figma.png) no-repeat center center;
 	background-size: cover;
 }
-
+#main .right_menu li a:hover{
+	transform: translateX(-5px);
+}
 #main .pdf_down{
 	position: fixed;
 	display: none;
@@ -510,6 +512,7 @@ body.fixed{
 	font-weight: 400;
 	color: #fff;
 	text-align: left;
+	text-shadow: 2px 2px 6px grey;
 }
 
 #page1 .text h3{
