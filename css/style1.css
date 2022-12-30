@@ -1046,7 +1046,12 @@ body.fixed{
 	margin-left: 15px;
 	text-indent: 16px;
 }
-
+@media only screen and (max-width: 500px){
+	#portfolio .inner .project .overview_area .link a.design{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
 #portfolio .inner .project .sub {
 	display: none;
 }
@@ -1316,7 +1321,7 @@ body.fixed{
 	color: #fff;
 	white-space: nowrap;
 }
-#main .mobile_keytext h2{
+#main .mobile_keytext h3{
 	font-size: 40px;
 	font-weight: 400;
 	font-family: 'Righteous', cursive;
