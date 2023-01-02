@@ -1440,18 +1440,12 @@ body.fixed{
 	#aboutme .content .profile{
 		width: 100%;
 	}
-	#aboutme .content dd p{ /**/
-		/* font-size: 13px; */
-	}
 	#aboutme .content .skills{
 		width: 100%;
 		margin-left: 0;
 	}
 	#aboutme .content .skills dt{ /**/
 		margin-top: 30px;
-	}
-	#aboutme .content .skills dd span{ /**/
-		/* font-size: 13px; */
 	}
 }
 
