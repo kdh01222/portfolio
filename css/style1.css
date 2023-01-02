@@ -1048,9 +1048,17 @@ body.fixed{
 	text-indent: 16px;
 }
 @media only screen and (max-width: 500px){
+	#portfolio .inner .project .overview_area .link a{
+		width: 8em;
+		line-height: 3;
+		font-size: 14px;
+		padding-left: 0.875em;
+	}
+	#portfolio .inner .project .overview_area .link a::after{
+		display: none;
+	}
 	#portfolio .inner .project .overview_area .link a.design{
-		margin-left: 0;
-		margin-top: 20px;
+		text-indent: 13px;
 	}
 }
 #portfolio .inner .project .sub {
